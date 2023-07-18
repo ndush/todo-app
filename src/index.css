@@ -1,20 +1,13 @@
 /* src/index.css */
 
-@import './index.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "./index.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
-   background-color: #e3940d;
+  font-family: "Inter", sans-serif;
+  background-color: #e3940d;
 }
 
-
-
-
-/* styles.css */
-/* Remove any existing styles for the links */
-
-/* Add the following Tailwind CSS utility classes */
 .link-container {
   display: flex;
   justify-content: center;
@@ -26,11 +19,9 @@ body {
   min-height: 10vh;
 } */
 .nav-link {
-  margin-right:0 10px;
+  margin-right: 0 10px;
   padding: 10px;
 }
-
-
 
 .completed {
   text-decoration: line-through;

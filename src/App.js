@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import Header from "./components/Header";
 import AllTasks from "./components/AllTasks";
 import ActiveTasks from "./components/ActiveTasks";
 import CompletedTasks from "./components/CompletedTasks";
@@ -10,7 +9,6 @@ const App = () => {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState("all");
 
-
   useEffect(() => {
     const storedTodos = localStorage.getItem("todos");
     if (storedTodos) {
@@ -18,8 +16,6 @@ const App = () => {
     }
   }, []);
 
- 
-  
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
